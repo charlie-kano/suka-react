@@ -1,6 +1,6 @@
 import React from "react";
 
-import wd from '../assets/images/wd.png'
+import wd from '../assets/images/wd.jpg'
 
 import './home.scss';
 

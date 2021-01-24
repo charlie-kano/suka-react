@@ -1,0 +1,12 @@
+.home {
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            border-radius: 50%;
+            max-height: 400px;
+            height: 40vh;
+        }
+    }
+}

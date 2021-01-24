@@ -60,6 +60,9 @@ function App() {
           <Route path="/shaman">
             <Shaman/>
           </Route>
+          <Route path="/temenos">
+            <Shaman/>
+          </Route>
           <Route path="/">
             <Home/>
           </Route>

@@ -11,7 +11,7 @@ export const Navbar = () => {
         <nav className="nav">
             <div className="nav__container">
                 <Link to="/" className="nav__brand">
-                    <img src={hand} className="nav__logo" />
+                    <img src={hand} alt="home-svg" className="nav__logo" />
                 </Link>
 
                 <div className="nav-items">

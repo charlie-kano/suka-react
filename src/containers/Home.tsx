@@ -9,7 +9,7 @@ export const Home = () => {
         <div className={'home'}>
             <p>Welcome to my site.</p>
             <div className={'home__image'}>
-                <img src={wd} />
+                <img src={wd} alt="welcome-img"/>
             </div>
         </div>
     )

@@ -12,27 +12,27 @@ import { Reiki } from './containers/Reiki';
 import { Shaman } from './containers/Shaman';
 import { Home } from './containers/Home';
 
-const routes: any[] = [
-  {
-    path: "/reiki",
-    component: Reiki,
-    exact: true
-  },
-  {
-    path: "/plants",
-    component: Plants,
-    exact: true
-  },
-  {
-    path: "/shaman",
-    component: Shaman,
-    exact: true
-  },
-  {
-    path: "/",
-    component: Home
-  },
-]
+// const routes: any[] = [
+//   {
+//     path: "/reiki",
+//     component: Reiki,
+//     exact: true
+//   },
+//   {
+//     path: "/plants",
+//     component: Plants,
+//     exact: true
+//   },
+//   {
+//     path: "/shaman",
+//     component: Shaman,
+//     exact: true
+//   },
+//   {
+//     path: "/",
+//     component: Home
+//   },
+// ]
 
 function App() {
   return (

@@ -13,7 +13,7 @@ export const Header = () => {
                 {/* \change to gatsby img thing eventualy */}
                 {/* <Img fluid={data.fileName.childImageSharp.fluid} alt="" /> */}
                 <div className="header-sections__logo">
-                    <img src={logo}></img>
+                    <img src={logo} alt="suka-logo"></img>
                 </div>
 
                 <div>

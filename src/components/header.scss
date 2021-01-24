@@ -1,14 +1,38 @@
 .header {
     &-sections {
         display: flex;
+
+        @media only screen and (max-width: 768px) {
+            height: 100px;
+        }
+
         > div {
             width: calc(100% / 3);
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (max-width: 768px) {
+                width: 50%;
+                &:first-child {
+                    display: none;
+                }
+            }
         }
 
         &__logo {
             display: flex;
             img {
                 margin: auto;
+                height: 100%;
+            }
+
+            @media only screen and (max-width: 768px) {
+                align-items: center;
+                padding-left: 20px;
+
+                img {
+                    height: 80%;
+                    margin: 0;
+                }
             }
         }
 
@@ -17,6 +41,12 @@
             font-weight: bold;
             padding: 10px;
             text-align: right;
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (max-width: 768px) {
+                font-size: 12px;
+                padding: 5px;
+            }
         }
     }
 }

@@ -6,8 +6,6 @@ import hand from '../assets/images/hand.svg';
 import './navbar.scss';
 
 
-
-
 export const Navbar = () => {
     return (
         <nav className="nav">
@@ -18,7 +16,7 @@ export const Navbar = () => {
 
                 <div className="nav-items">
                     <Link className="nav-items__link" to="/plants">Plant Medicine</Link>
-                    <Link className="nav-items__link" to="/shamanic">Shamanic Healing</Link>
+                    <Link className="nav-items__link" to="/shaman">Shamanic Healing</Link>
                     <Link className="nav-items__link" to="/reiki">Reiki Master</Link>
                 </div>
             </div>

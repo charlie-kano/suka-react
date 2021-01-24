@@ -3,6 +3,8 @@ import { ContactDetails } from "./ContactDetails";
 import { Navbar } from "./Navbar";
 import logo from '../assets/images/logo.png';
 
+import './header.scss';
+
 export const Header = () => {
     return (
         <header className="header">

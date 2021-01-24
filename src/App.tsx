@@ -6,7 +6,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import { Plants } from './containers/Plants';
 import { Reiki } from './containers/Reiki';
@@ -15,20 +14,23 @@ import { Home } from './containers/Home';
 
 const routes: any[] = [
   {
-    path: "/",
-    component: Home
+    path: "/reiki",
+    component: Reiki,
+    exact: true
   },
   {
     path: "/plants",
-    component: Plants
+    component: Plants,
+    exact: true
   },
   {
-    path: "/reiki",
-    component: Reiki
+    path: "/shaman",
+    component: Shaman,
+    exact: true
   },
   {
-    path: "/Shaman",
-    component: Shaman
+    path: "/",
+    component: Home
   },
 ]
 
@@ -38,7 +40,29 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route></Route>
+          {/* {routes.map((route, i) => {
+            console.log(route)
+            return (
+              <div>
+                <Route
+                  path={route.path}
+                  exact={route.exact}
+                  strict={true}
+                  component={route.component} />
+              </div>)
+          })} */}
+          <Route path="/plants">
+            <Plants/>
+          </Route>
+          <Route path="/reiki">
+            <Reiki/>
+          </Route>
+          <Route path="/shaman">
+            <Shaman/>
+          </Route>
+          <Route path="/">
+            <Home/>
+          </Route>
         </Switch>
       </div>
     </Router>
@@ -46,3 +70,4 @@ function App() {
 }
 
 export default App;
+

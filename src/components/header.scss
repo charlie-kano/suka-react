@@ -1,0 +1,22 @@
+.header {
+    &-sections {
+        display: flex;
+        > div {
+            width: calc(100% / 3);
+        }
+
+        &__logo {
+            display: flex;
+            img {
+                margin: auto;
+            }
+        }
+
+        .contact-details {
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: right;
+        }
+    }
+}

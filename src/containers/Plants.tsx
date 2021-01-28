@@ -8,7 +8,7 @@ export const Plants = () => {
     return (
         <>
             <div className="img">
-                <img onLoad={() => setImgLoaded(true)} src={plants} />
+                <img onLoad={() => setImgLoaded(true)} alt="plants-img" src={plants} />
             </div>
             <div className="description">
             {imgLoaded && plantsText.map(text => <p>{text}</p>)}

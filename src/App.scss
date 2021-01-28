@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  background-color: #0c6980;
+  color: #ffc000;
+  min-height: 100vh;
+
+
+  .content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+
+    .img {
+      width: 30%;
+      
+      img {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+
+    .description {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      .img,
+      .description {
+        width: 100%;
+        img{
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}

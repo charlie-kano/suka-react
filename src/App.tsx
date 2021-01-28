@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
+
 import { Header } from './components/Header';
 import {
   BrowserRouter as Router,
@@ -12,45 +12,16 @@ import { Reiki } from './containers/Reiki';
 import { Shaman } from './containers/Shaman';
 import { Home } from './containers/Home';
 
-// const routes: any[] = [
-//   {
-//     path: "/reiki",
-//     component: Reiki,
-//     exact: true
-//   },
-//   {
-//     path: "/plants",
-//     component: Plants,
-//     exact: true
-//   },
-//   {
-//     path: "/shaman",
-//     component: Shaman,
-//     exact: true
-//   },
-//   {
-//     path: "/",
-//     component: Home
-//   },
-// ]
+import './App.scss';
+
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
-        <Switch>
-          {/* {routes.map((route, i) => {
-            console.log(route)
-            return (
-              <div>
-                <Route
-                  path={route.path}
-                  exact={route.exact}
-                  strict={true}
-                  component={route.component} />
-              </div>)
-          })} */}
+        <main>
+          <div className="content">
           <Route path="/plants">
             <Plants/>
           </Route>
@@ -63,9 +34,24 @@ function App() {
           <Route path="/temenos">
             <Shaman/>
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home/>
           </Route>
+          </div>
+        </main>
+        <Switch>
+          {/* {routes.map((route, i) => {
+            console.log(route)
+            return (
+              <div>
+                <Route
+                  path={route.path}
+                  exact={route.exact}
+                  strict={true}
+                  component={route.component} />
+              </div>)
+          })} */}
+
         </Switch>
       </div>
     </Router>
